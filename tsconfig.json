@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "target": "es2018",
+    "strict": true,
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "module": "esnext",
+    "moduleResolution": "node16",
+    "isolatedModules": true
+  },
+  "exclude": ["node_modules"],
+  "ts-node": {
+    "swc": true,
+    "transpileOnly": true
+  }
+}
