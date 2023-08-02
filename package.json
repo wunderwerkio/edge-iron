@@ -45,5 +45,12 @@
   "dependencies": {
     "@hapi/bourne": "^3.0.0",
     "@wunderwerk/edge-crypto": "1.0.0-alpha.1"
-  }
+  },
+  "files": [
+    "dist/index.d.ts",
+    "dist/index.js",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ]
 }
