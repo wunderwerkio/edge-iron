@@ -4,5 +4,7 @@
   "initialVersions": {
     "@wunderwerk/edge-iron": "0.0.0"
   },
-  "changesets": []
+  "changesets": [
+    "few-cheetahs-shave"
+  ]
 }
