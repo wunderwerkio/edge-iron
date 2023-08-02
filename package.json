@@ -1,5 +1,7 @@
 {
   "name": "@wunderwerk/edge-iron",
+  "version": "0.0.0",
+  "description": "Edge-Runtime compatible port of @hapi/iron",
   "type": "module",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",

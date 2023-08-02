@@ -1,3 +1,4 @@
+import { Buffer } from "buffer";
 import { generateKey } from "./generateKey.js";
 import { HMacOptions, HMacResult, Password } from "./types.js";
 

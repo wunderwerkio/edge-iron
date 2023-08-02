@@ -1,3 +1,4 @@
+import { Buffer } from "buffer";
 import { Password, PasswordSecret, SpecificPasswordSecret } from "./types.js";
 
 export const normalizePassword = (

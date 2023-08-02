@@ -1,3 +1,4 @@
+import { Buffer } from "buffer";
 import { EncryptionOptions, Password } from "./types.js";
 import { generateKey } from "./generateKey.js";
 
