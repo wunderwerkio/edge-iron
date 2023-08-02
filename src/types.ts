@@ -3,7 +3,11 @@ import { IronAlgorithms } from "./constants.js";
 /**
 seal() method options.
 */
-export interface SealOptionsSub<TAlgo extends keyof IronAlgorithms = keyof IronAlgorithms> {
+export interface SealOptionsSub<
+  TAlgo extends keyof IronAlgorithms = keyof IronAlgorithms
+> {
+  iv?: Buffer;
+  salt?: string;
   /**
   The length of the salt (random buffer used to ensure that two identical objects will generate a different encrypted result). Defaults to 256.
   */
@@ -31,11 +35,9 @@ generateKey() method options.
 export interface GenerateKeyOptions
   extends Pick<
     SealOptionsSub,
-    "algorithm" | "iterations" | "minPasswordlength"
+    "iv" | "salt" | "algorithm" | "iterations" | "minPasswordlength"
   > {
   saltBits?: number;
-  salt?: string;
-  iv?: Buffer;
 }
 
 export interface EncryptionOptions

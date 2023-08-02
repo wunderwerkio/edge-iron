@@ -1,3 +1,4 @@
+import { macPrefix } from "./constants.js";
 import { encrypt } from "./encrypt.js";
 import { hmacWithPassword } from "./hmacWithPassword.js";
 import { normalizePassword } from "./normalizePassword.js";
@@ -9,6 +10,9 @@ import {
 } from "./types.js";
 import { base64UrlEncode } from "./utils.js";
 
+/**
+ * Seriealizes, encrypts, and signs objects into an iron protocol string.
+ */
 export const seal = async (
   object: any,
   password: Password | PasswordSecret | SpecificPasswordSecret,
@@ -44,7 +48,7 @@ export const seal = async (
   const iv = base64UrlEncode(key.iv);
   const expiration = options.ttl ? now + options.ttl : "";
   const macBaseString =
-    exports.macPrefix +
+    macPrefix +
     "*" +
     passwordId +
     "*" +
