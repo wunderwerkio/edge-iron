@@ -1,5 +1,7 @@
 import { Buffer } from "buffer";
-import { pbkdf2, randomBits } from "@wunderwerk/edge-crypto";
+import { pbkdf2, randomBits } from "./crypto/index.js";
+ 
+
 import { algorithms } from "./constants.js";
 import { GenerateKeyOptions, Key, Password } from "./types.js";
 

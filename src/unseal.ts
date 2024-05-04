@@ -1,6 +1,6 @@
 import { Buffer } from "buffer";
 import Bourne from "@hapi/bourne";
-import { timingSafeEqual } from "@wunderwerk/edge-crypto";
+import { timingSafeEqual }  from "./crypto/index.js";
 import { hmacWithPassword } from "./hmacWithPassword.js";
 import { normalizePassword } from "./normalizePassword.js";
 import {

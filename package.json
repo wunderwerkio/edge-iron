@@ -1,7 +1,7 @@
 {
-  "name": "@wunderwerk/edge-iron",
-  "version": "1.0.0-alpha.0",
-  "description": "Edge-Runtime compatible port of @hapi/iron",
+  "name": "@antaja/edge-iron",
+  "version": "1.0.0",
+  "description": "Edge-Runtime compatible port of @hapi/iron and fork from @wunderwerk/edge-iron",
   "type": "module",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -43,8 +43,8 @@
     "typescript": "^5.1.6"
   },
   "dependencies": {
-    "@hapi/bourne": "^3.0.0",
-    "@wunderwerk/edge-crypto": "1.0.0-alpha.1"
+    "@hapi/bourne": "^3.0.0"
+
   },
   "files": [
     "dist/index.d.ts",

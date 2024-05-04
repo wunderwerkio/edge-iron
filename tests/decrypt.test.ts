@@ -2,7 +2,7 @@ import test from "ava";
 import { algorithms } from "../src/constants.js";
 import { encrypt } from "../src/encrypt.js";
 import { decrypt } from "../src/decrypt.js";
-import { randomBits } from "@wunderwerk/edge-crypto";
+import { randomBits } from "../src/crypto/index.js";
 
 const testAlgorithms = [
   "AES-CTR",
